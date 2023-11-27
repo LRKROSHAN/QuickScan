@@ -94,6 +94,7 @@ def generate_report(vulnerable_devices):
 
 
 def main():
+    network_range = "192.168.0.9/24"
     credentials = load_credentials()
     all_devices = scan_network()
     iot_devices = identify_iot_devices(all_devices)
