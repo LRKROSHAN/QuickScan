@@ -20,7 +20,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        if username == "admin" and password == "pass":
+        if username == "user" and password == "1234":
             return "Logged in successfully!"
         else:
             return "Login Failed!"
